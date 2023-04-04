@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%8aiy!g%wkvj__0v66ny@!#(wyg0^)riaino8g2d8m3f2zg3jd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -36,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'LittleLemonApp',
+    "rest_framework",
+
 ]
 
 MIDDLEWARE = [
