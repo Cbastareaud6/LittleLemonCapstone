@@ -24,6 +24,7 @@ router = DefaultRouter()
 router.register(r'tables', views.BookingViewSet),
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
     path('restaurant/', include('LittleLemonApp.urls')),
     path('restaurant/booking/', include(router.urls)),
