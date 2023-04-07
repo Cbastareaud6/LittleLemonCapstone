@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'LittleLemonApp',
     "rest_framework",
+    "rest_framework.authtoken",
+    'djoser',
 
 ]
 
@@ -105,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+DJOSER = {"USER_ID_FIELD": "username"}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
